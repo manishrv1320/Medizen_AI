@@ -1,0 +1,25 @@
+{
+  "name": "medizen",
+  "version": "1.0.0",
+  "description": "Personal health checkup dashboard with family sharing, reminders, notifications and a personal health assistant",
+  "private": true,
+  "type": "module",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node --env-file-if-exists=.env --disable-warning=ExperimentalWarning server/index.js",
+    "dev": "node --watch --env-file-if-exists=.env --disable-warning=ExperimentalWarning server/index.js",
+    "seed": "node --env-file-if-exists=.env --disable-warning=ExperimentalWarning server/seed.js"
+  },
+  "engines": {
+    "node": ">=22.13"
+  },
+  "dependencies": {
+    "@fontsource-variable/figtree": "^5.3.0",
+    "@fontsource-variable/fraunces": "^5.3.0",
+    "@google/genai": "^2.32.0",
+    "chart.js": "^4.6.1",
+    "express": "^5.3.0",
+    "multer": "^2.5.0",
+    "zod": "^4.6.7"
+  }
+}
